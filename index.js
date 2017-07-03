@@ -4,10 +4,13 @@
 // Created by sustny(http://sustny.me/)
 //
 
-function sumNum(n1, n2, n3) {
-  var sum = n1+n2+n3;
+var sumNum = function(n1, n2, n3) {
+  var sum = n1 + n2 + n3;
   return sum;
 }
 
 var total = sumNum(1, 3, 5);
-alert(total);
+console.log(total);
+
+var message = "Hello world!"
+console.log(message);
