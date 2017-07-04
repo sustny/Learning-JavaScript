@@ -4,7 +4,6 @@
 // Created by sustny(http://sustny.me/)
 //
 
-/*
 var sumNum = function(n1, n2, n3) {
   var sum = n1 + n2 + n3;
   return sum;
@@ -45,8 +44,6 @@ console.log(hash['status']);
 
 console.log(hash); //[実行結果]{age: 24, status: "Gakusei", name: "YJSNPI"}
 
-*/
-
 var num = 2;
 
 if(num == 1){
@@ -57,24 +54,38 @@ if(num == 1){
   console.log("false")
 }
 
-var animal = "cat";
-switch(animal){
-    case "cat":
-        console.log("猫です。");
-        break;
-    case "dog":
-        console.log("犬です。");
-        break;
-    case "rabbit":
-        console.log("うさぎです。");
-        break;
-    case "mouse":
-         console.log("ネズミです。");
-        break;
-    case "lion":
-        console.log("ライオンです。");
-        break;
-    default:
-        console.log("動物ではありません。");
-        break;
+var wise = "futsuu";
+switch(wise) {
+  case "ikemen":
+  console.log("イケメンです");
+  break;
+  case "iketenai":
+  console.log("イケメンではない");
+  break;
+  case "futsuu":
+  console.log("どちらでもない");
+  break;
+}
+
+var i = 0;
+while(i<10) {
+  i++;
+  console.log("i=" + i);
+}
+
+i=0;
+do {
+  i += 15;
+  console.log("i=" + i);
+} while(i<150)
+
+for(i=0;i<=100;i+=10) {
+  if(i == 30) {
+        continue;
+    }
+  console.log("i="+i);
+}
+
+for(var element in hash) {
+  console.log(element + " / " +  hash[element]);
 }
