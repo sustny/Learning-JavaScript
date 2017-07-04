@@ -89,3 +89,13 @@ for(i=0;i<=100;i+=10) {
 for(var element in hash) {
   console.log(element + " / " +  hash[element]);
 }
+
+var Person = function(name, age){
+    this.name = name;
+    this.age = age;
+    this.status = "Gakusei";
+};
+
+//コンストラクタからインスタンスを生成する
+var per1 = new Person("Tadokoro", 24);
+console.log(per1.name + " " + per1.age + " " + per1.status);
