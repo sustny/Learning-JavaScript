@@ -4,6 +4,6 @@
 // Created by sustny(http://sustny.me/)
 //
 
-function changeColor(id, font_color){
-    document.getElementById(id).style.color = font_color;
-}
+var elem = document.getElementById("test");
+console.log(elem);
+elem.innerHTML = '<span style='color: red;'>span要素に変更したよ！</span>';
